@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* TAREA 1:  
+            INVESTIGAR DIFERENTES TIPOS DE ESTILO EN CSS  
+        */
+
+        /*
+            TAREA 2: 
+            INSTALAR GIT Y CREAR UNA CUENTA EN GITHUB
+        */
+        .boton {
+            background-color: black;
+            color: white; /* Color de texto */
+        }
+    </style>
+</head>
+<body>
+    <!-- Botones -->
+    <!-- Clases pueden agrupar muchos componentes -->
+    <!-- Clase boton:  .boton  -->
+    <!-- Identificadores (id) Definen a 1 solo componente -->
+    <!-- Id botonImprimir: #botonImprimir -->
+    <button class="boton" id="botonImprimir"> Imprimir </button>
+    <input type="button" value="Imprimir">
+
+    <script>
+        // Variables y constantes
+        let mensaje = "Soy un mensaje"; // Variable
+        const mensajeNuevo = "Soy un mensaje"; // Constante
+
+        // REFERENCIAS A ELEMENTOS HTML VAN EN CONSTANTES
+        // document es un objeto que apunta al <body>
+        const botonImprimir = document.querySelector("#botonImprimir");
+        // Funciones lambda(ANONIMAS), tambien se conoce como
+        // Funcion flecha
+        // Estructura: () => { tu_codigo }
+        botonImprimir.addEventListener("click", () => {
+            console.log("Boton clickeado");
+            const listaNumeros = [10, 20, 30, 40, 50]; // ARREGLO
+            
+            listaNumeros.forEach( x => { 
+                console.log(x); 
+            } );
+        } );
+
+        // Ventana de alerta
+        alert(mensaje);
+        console.log(mensaje);
+    </script>
+</body>
+</html>
